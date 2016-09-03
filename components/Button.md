@@ -131,3 +131,128 @@ export default class ButtonExample3 extends Component {
 <div class="demo-phone">
 		<iframe src="http://localhost:3000/#/app/6"></iframe>
 </div>
+
+### Rounded Button
+Include `rounded` prop with `Button` to easily style your buttons.
+
+*Syntax*
+```JavaScript
+import React, { Component } from 'react';
+import { Container, Content, Button } from 'native-base';
+
+export default class RoundedButtonExample extends Component {
+  render() {
+    return (
+      <Container>
+        <Content>
+          <Button rounded> Primary </Button>
+          <Button rounded success> Success </Button>
+          <Button rounded info> Info </Button>
+          <Button rounded warning> Warning </Button>
+          <Button rounded danger> Danger </Button>
+        </Content>
+      </Container>
+    );
+  }
+}
+```
+
+### Icon Button
+The Icon Buttons, can take text and/or icon as child elements inside the Button.
+This goes as simple as this: include your choice of icon using `Icon` component within the `Button` component.
+
+*Syntax*
+```JavaScript
+import React, { Component } from 'react';
+import { Container, Content, Button, Icon } from 'native-base';
+​
+export default class IconButtonExample extends Component {
+  render() {
+    return (
+      <Container>
+        <Content>
+          <Button primary>
+            <Icon name='ios-home' />
+            Home
+          </Button>
+
+          <Button success iconRight>
+            Next
+            <Icon name='ios-arrow-forward' />
+          </Button>
+
+          <Button info>
+            Previous
+            <Icon name='ios-arrow-back' />
+          </Button>
+
+          <Button warning>
+            <Icon name='ios-star' />
+          </Button>
+
+          <Button danger>
+            <Icon name='ios-close' />
+          </Button>
+
+          <Button style={{backgroundColor: '#384850'}} >
+            <Icon name='ios-search' style={{color: '#00c497'}}/>
+          </Button>
+        </Content>
+      </Container>
+    );
+  }
+}
+```
+
+<div class="demo-phone">
+		<iframe src="http://localhost:3000/#/app/7"></iframe>
+</div>
+
+### Outline Button
+Include `bordered` prop with Button to apply outline button style.
+
+*Syntax*
+```JavaScript
+import React, { Component } from 'react';
+import { Container, Content, Button } from 'native-base';
+
+export default class OutlineButtonExample extends Component {
+  render() {
+    return (
+      <Container>
+        <Content>
+          <Button bordered> Primary </Button>
+          <Button bordered success> Success </Button>
+          <Button bordered info> Info </Button>
+          <Button bordered warning> Warning </Button>
+          <Button bordered danger> Danger </Button>
+        </Content>
+      </Container>
+    );
+  }
+}
+```
+
+### Transparent Button
+Include `transparent` prop with Button. This will render button without border and background color.
+
+*Syntax*
+```JavaScript
+import React, { Component } from 'react';
+import { Container, Content, Button } from 'native-base';
+
+export default class TransparentButtonExample extends Component {
+  render() {
+    return (
+      <Container>
+        <Content>
+          <Button transparent> Primary </Button>
+          <Button transparent>
+            <Icon name='ios-home' style={{fontSize: 20, color: '#00c497'}} />
+          </Button>
+        </Content>
+      </Container>
+    );
+  }
+}
+```

@@ -408,6 +408,106 @@ NativeBase provides following color themes:</p><ul><li>Primary (default)
 
 
 
+<h3 id="rounded-button">Rounded Button</h3><p>Include <code>rounded</code> prop with <code>Button</code> to easily style your buttons.</p><p><em>Syntax</em></p><pre><code class="lang-JavaScript"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RoundedButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">rounded</span>&gt;</span> Primary <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">success</span>&gt;</span> Success <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">info</span>&gt;</span> Info <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">warning</span>&gt;</span> Warning <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">danger</span>&gt;</span> Danger <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+    );
+  }
+}</code></pre>
+<h3 id="icon-button">Icon Button</h3><p>The Icon Buttons, can take text and/or icon as child elements inside the Button.
+This goes as simple as this: include your choice of icon using <code>Icon</code> component within the <code>Button</code> component.</p><p><em>Syntax</em></p><pre><code class="lang-JavaScript"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Button, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+&#x200B;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IconButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      &lt;Container&gt;
+        &lt;Content&gt;
+          &lt;Button primary&gt;
+            &lt;Icon name=&apos;ios-home&apos; /&gt;
+            Home
+          &lt;/Button&gt;
+
+          &lt;Button success iconRight&gt;
+            Next
+            &lt;Icon name=&apos;ios-arrow-forward&apos; /&gt;
+          &lt;/Button&gt;
+
+          &lt;Button info&gt;
+            Previous
+            &lt;Icon name=&apos;ios-arrow-back&apos; /&gt;
+          &lt;/Button&gt;
+
+          &lt;Button warning&gt;
+            &lt;Icon name=&apos;ios-star&apos; /&gt;
+          &lt;/Button&gt;
+
+          &lt;Button danger&gt;
+            &lt;Icon name=&apos;ios-close&apos; /&gt;
+          &lt;/Button&gt;
+
+          &lt;Button style={{backgroundColor: &apos;#384850&apos;}} &gt;
+            &lt;Icon name=&apos;ios-search&apos; style={{color: &apos;#00c497&apos;}}/&gt;
+          &lt;/Button&gt;
+        &lt;/Content&gt;
+      &lt;/Container&gt;
+    );
+  }
+}</code></pre>
+<div class="demo-phone">
+        <iframe src="http://localhost:3000/#/app/7"></iframe>
+</div>
+
+
+
+<h3 id="outline-button">Outline Button</h3><p>Include <code>bordered</code> prop with Button to apply outline button style.</p><p><em>Syntax</em></p><pre><code class="lang-JavaScript"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OutlineButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">bordered</span>&gt;</span> Primary <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">bordered</span> <span class="hljs-attr">success</span>&gt;</span> Success <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">bordered</span> <span class="hljs-attr">info</span>&gt;</span> Info <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">bordered</span> <span class="hljs-attr">warning</span>&gt;</span> Warning <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">bordered</span> <span class="hljs-attr">danger</span>&gt;</span> Danger <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+    );
+  }
+}</code></pre>
+<h3 id="transparent-button">Transparent Button</h3><p>Include <code>transparent</code> prop with Button. This will render button without border and background color.</p><p><em>Syntax</em></p><pre><code class="lang-JavaScript"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TransparentButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">transparent</span>&gt;</span> Primary <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">transparent</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&apos;ios-home&apos;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{fontSize:</span> <span class="hljs-attr">20</span>, <span class="hljs-attr">color:</span> &apos;#<span class="hljs-attr">00c497</span>&apos;}} /&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
+    );
+  }
+}</span></code></pre>
+
                                 
                                 </section>
                             
@@ -446,7 +546,7 @@ NativeBase provides following color themes:</p><ul><li>Primary (default)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Button","level":"2.3","depth":1,"previous":{"title":"Badge","level":"2.2","depth":1,"path":"components/Badge.md","ref":"components/Badge.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"include":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Chion82","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase-web Documentation","gitbook":"*"},"file":{"path":"components/Button.md","mtime":"2016-09-03T08:49:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-03T11:40:35.858Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Button","level":"2.3","depth":1,"previous":{"title":"Badge","level":"2.2","depth":1,"path":"components/Badge.md","ref":"components/Badge.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"include":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Chion82","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase-web Documentation","gitbook":"*"},"file":{"path":"components/Button.md","mtime":"2016-09-03T13:37:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-03T11:40:35.858Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
