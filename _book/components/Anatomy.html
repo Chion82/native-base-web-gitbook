@@ -1,0 +1,364 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Anatomy · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Introduction</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Components</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="Anatomy.html">
+            
+                <a href="Anatomy.html">
+            
+                    
+                    Anatomy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Anatomy</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="anatomy">Anatomy</h2><p>Automatically animates views to their new positions.
+A common way to use NativeBase screen structure is to have all the components within <code>&lt;Container&gt;</code>.</p><p>Contents:</p><p><code>Header</code></p><p><code>Content</code></p><h2 id="basic-usage">Basic Usage</h2><p><em>General Syntax</em></p><pre><code class="lang-JavaScript"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Title, Content } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AnatomyExample1</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Header</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Title</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">Title</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>This is body section<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+        );
+    }
+}</code></pre>
+<div style="width:290px;height:593px;margin-left:auto;margin-right:auto;background-image:url(/images/iphone.png)">
+        <iframe style="border-width:0px;background-color:white;
+        width:337px;height:600px;margin-left:-23px;margin-top:-10px;
+        -ms-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+        " src="http://localhost:3000/#/app/1"></iframe>
+</div>
+
+
+
+<ul><li>NativeBase provides its own frame component, named after <code>&lt;Container&gt;</code>.
+</li>
+<li>All the components should be included within the Container.
+</li>
+<li>Container takes mainly two components: <code>&lt;Header&gt;</code> and <code>&lt;Content&gt;</code>.
+</li>
+<li>Container comes with its predefined stylesheet, with an added advantage of accepting user-defined styles.
+</li>
+<li>Usage of Container&apos;s Header component is very similar to your HTML <code>&lt;head&gt;</code>.
+</li>
+<li>The Content component of Container is nothing but the body section of your screen.
+</li></ul>
+<h2 id="header">Header</h2><ul><li>NativeBase component that renders as Header (navbar) for your screen.
+</li>
+<li>There can be a single Header component into your Container.
+</li>
+<li>To have Header for your screen, include <code>&lt;Header&gt;</code> component within <code>&lt;Container&gt;</code>.
+</li>
+<li>NativeBase gives you flexibility to define your Header component anywhere in the bounds of Container.
+</li>
+<li>Header takes input as: Button and Title (Text)
+</li>
+<li>The components those are defined within <code>&lt;Header&gt;</code> will be rendered in the same order that you define them.
+</li>
+<li>Header provides you with stylesheet.
+</li>
+<li>User can add custom styles while defining <code>&lt;Header&gt;</code> within their app.
+</li>
+<li>Replacing Component: React Native <code>&lt;View&gt;</code>
+</li></ul>
+<p><em>Syntax</em></p><pre><code class="lang-JavaScript"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Title, Content, Button, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AnatomyExample2</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">return</span> (
+            &lt;Container&gt;
+                &lt;Header&gt;
+                    &lt;Button transparent&gt;
+                        &lt;Icon name=&apos;ios-arrow-back&apos; /&gt;
+                    &lt;/Button&gt;
+
+                    &lt;Title&gt;Header&lt;/Title&gt;
+
+                    &lt;Button transparent&gt;
+                        &lt;Icon name=&apos;md-menu&apos; /&gt;
+                    &lt;/Button&gt;
+                &lt;/Header&gt;
+
+                &lt;Content&gt;
+                    &lt;Text&gt;This is body section&lt;/Text&gt;
+                &lt;/Content&gt;
+            &lt;/Container&gt;
+        );
+    }
+}</code></pre>
+<div style="width:290px;height:593px;margin-left:auto;margin-right:auto;background-image:url(/images/iphone.png)">
+        <iframe style="border-width:0px;background-color:white;
+        width:337px;height:600px;margin-left:-23px;margin-top:-10px;
+        -ms-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+        " src="http://localhost:3000/#/app/2"></iframe>
+</div>
+
+
+
+<h2 id="content">Content</h2><ul><li>This is a NativeBase component which renders as body element of your screen.
+</li>
+<li>Each screen can have only one <code>&lt;Content&gt;</code> component and can be defined anywhere within the Container.
+</li>
+<li>Content takes in the whole collection of React Native and NativeBase components.
+</li>
+<li>Content provides you with stylesheet.
+</li>
+<li>User can add custom styles while defining <code>&lt;Content&gt;</code> within their app.
+</li>
+<li>Replacing Component: React Native <code>&lt;ScrollView&gt;</code>
+</li></ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Anatomy","level":"2.1","depth":1,"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"components/Anatomy.md","mtime":"2016-09-03T03:41:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-03T02:30:43.774Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
