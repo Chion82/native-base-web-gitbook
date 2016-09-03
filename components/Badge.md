@@ -28,13 +28,6 @@ export default class BadgeExample extends Component {
 }
 ```
 
-<div style="width:290px;height:593px;margin-left:auto;margin-right:auto;background-image:url(/images/iphone.png)">
-		<iframe style="border-width:0px;background-color:white;
-		width:337px;height:600px;margin-left:-23px;margin-top:-10px;
-		-ms-transform: scale(0.75);
-    -moz-transform: scale(0.75);
-    -o-transform: scale(0.75);
-    -webkit-transform: scale(0.75);
-    transform: scale(0.75);
-		" src="http://localhost:3000/#/app/3"></iframe>
+<div class="demo-phone">
+		<iframe src="http://localhost:3000/#/app/3"></iframe>
 </div>
