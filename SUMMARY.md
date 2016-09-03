@@ -5,3 +5,4 @@
 ### Components
 
 * [Anatomy](components/Anatomy.md)
+* [Badge](components/Badge.md)
