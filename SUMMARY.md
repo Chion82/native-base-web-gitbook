@@ -15,3 +15,4 @@
 * [Check Box](components/CheckBox.md)
 * [Form](components/Form.md)
 * [Icon](components/Icon.md)
+* [Input Group](components/InputGroup.md)

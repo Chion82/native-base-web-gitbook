@@ -46,6 +46,10 @@ export default class FormExample extends Component {
 }
 ```
 
+<div class="demo-phone">
+	<iframe src="http://localhost:3000/#/app/14"></iframe>
+</div>
+
 ### Configuration
 |Property|Default|Option|Description|
 |--------|-------|------|-----------|
