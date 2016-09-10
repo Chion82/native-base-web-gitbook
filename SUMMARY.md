@@ -12,3 +12,4 @@
 * [Badge](components/Badge.md)
 * [Button](components/Button.md)
 * [Card](components/Card.md)
+* [Check Box](components/CheckBox.md)
