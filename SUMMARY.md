@@ -11,3 +11,4 @@
 * [Anatomy](components/Anatomy.md)
 * [Badge](components/Badge.md)
 * [Button](components/Button.md)
+* [Card](components/Card.md)
