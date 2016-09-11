@@ -24,7 +24,7 @@ export default class ThumbnailExample extends Component {
 }
 ```
 <div class="demo-phone">
-  <iframe src="http://localhost:3000/#/app/28"></iframe>
+  <iframe src="https://blog.chionlab.moe/native-base-web-example/#/app/28"></iframe>
 </div>
 
 ### Configuration

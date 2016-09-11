@@ -28,7 +28,7 @@ export default class SearchBarExample extends Component {
 ```
 
 <div class="demo-phone">
-  <iframe src="http://localhost:3000/#/app/25"></iframe>
+  <iframe src="https://blog.chionlab.moe/native-base-web-example/#/app/25"></iframe>
 </div>
 
 * `searchBar`: Prop to be used with `<Header>` component to have Search bar onto the Header section of your screen.

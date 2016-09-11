@@ -29,5 +29,5 @@ export default class BadgeExample extends Component {
 ```
 
 <div class="demo-phone">
-		<iframe src="http://localhost:3000/#/app/3"></iframe>
+		<iframe src="https://blog.chionlab.moe/native-base-web-example/#/app/3"></iframe>
 </div>

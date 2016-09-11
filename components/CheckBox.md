@@ -31,7 +31,7 @@ export default class CheckBoxExample extends Component {
 ```
 
 <div class="demo-phone">
-	<iframe src="http://localhost:3000/#/app/13"></iframe>
+	<iframe src="https://blog.chionlab.moe/native-base-web-example/#/app/13"></iframe>
 </div>
 
 ### Configuration

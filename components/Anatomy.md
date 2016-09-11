@@ -33,7 +33,7 @@ export default class AnatomyExample1 extends Component {
 ```
 
 <div class="demo-phone">
-		<iframe src="http://localhost:3000/#/app/1"></iframe>
+		<iframe src="https://blog.chionlab.moe/native-base-web-example/#/app/1"></iframe>
 </div>
 
 * NativeBase provides its own frame component, named after `<Container>`.
@@ -87,7 +87,7 @@ export default class AnatomyExample2 extends Component {
 ```
 
 <div class="demo-phone">
-		<iframe src="http://localhost:3000/#/app/2"></iframe>
+		<iframe src="https://blog.chionlab.moe/native-base-web-example/#/app/2"></iframe>
 </div>
 
 ## Content

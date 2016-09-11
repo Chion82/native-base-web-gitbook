@@ -31,7 +31,7 @@ export default class LayoutExample extends Component {
 ```
 
 <div class="demo-phone">
-	<iframe src="http://localhost:3000/#/app/16"></iframe>
+	<iframe src="https://blog.chionlab.moe/native-base-web-example/#/app/16"></iframe>
 </div>
 
 NOTE: `<Content>` component uses `<ScrollView>`. This is required by `<Col>` and `<Row>` elements of Easy-Grid to have a defined height.
