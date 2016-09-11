@@ -12,4 +12,4 @@ Live Demo
 
 Get Started
 -----------
-Use [our boilerplate](https://github.com/Chion82/rnweb-native-base-starter) to bootstrap your app, in just 30 seconds.
+Use [our boilerplate](https://github.com/Chion82/rnweb-native-base-starter) to bootstrap your app, in 5 minutes.
