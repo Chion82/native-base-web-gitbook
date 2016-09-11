@@ -23,3 +23,6 @@
 * [Spinner](components/Spinner.md)
 * [Tabs](components/Tabs.md)
 * [Thumbnail](components/Thumbnail.md)
+
+### Customize
+* [Setup](customize/setup.md)
