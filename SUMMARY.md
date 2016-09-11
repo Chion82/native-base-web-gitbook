@@ -4,7 +4,7 @@
 
 * [Get Started](intro/getstarted.md)
 * [Working Components](intro/components.md)
-* [Migrate from NativeBase Project](intro/migrate.md)
+* [Migrate from NativeBase Projects](intro/migrate.md)
 
 ### Components
 
@@ -16,3 +16,10 @@
 * [Form](components/Form.md)
 * [Icon](components/Icon.md)
 * [Input Group](components/InputGroup.md)
+* [Layout](components/Layout.md)
+* [List](components/List.md)
+* [Radio Button](components/RadioButton.md)
+* [Search Bar](components/SearchBar.md)
+* [Spinner](components/Spinner.md)
+* [Tabs](components/Tabs.md)
+* [Thumbnail](components/Thumbnail.md)
