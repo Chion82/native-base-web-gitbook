@@ -1,5 +1,11 @@
 {
 	"title" : "NativeBase for Web Documentation",
 	"author" : "Chion82",
-	"plugins" : [ "include" ]
+	"plugins" : [ "include", "forkmegithub" ],
+	"pluginsConfig": {
+	  "forkmegithub": {
+	    "url": "https://github.com/Chion82/native-base-web",
+			"color": "darkblue"
+	  }
+  }
 }
