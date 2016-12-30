@@ -1,6 +1,6 @@
 Components
 ----------
-Most components from [NativeBase](http://nativebase.io/) are included with same features and parameters. You can read the [NativeBase documentation](http://nativebase.io/docs/v0.5.7/) to use them in NativeBase-web while we are working on our gitbook.
+Most components from [NativeBase](http://nativebase.io/) are included with same features and parameters. You can read the [NativeBase documentation](http://nativebase.io/docs/v0.5.7/) to use them in native-base-web while we are working on our gitbook.
 
 Working components:  
 * Anatomy  
