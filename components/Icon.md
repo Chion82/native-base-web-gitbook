@@ -4,10 +4,10 @@ Icon
 Perfect, crisp, high definition icons and pixel ideal fonts powered by NativeBase to preserve matters very high first-rate. You will continually have pixel perfect icons on your initiatives.
 
 **IMPORTANT**
-* `Icon` for `NativeBase-web` is re-implemented with [react-icons](https://github.com/gorangajic/react-icons).
+* `Icon` for `native-base-web` is re-implemented with [react-icons](https://github.com/gorangajic/react-icons).
 * Currently supported icon families: Ionicons(default), FontAwesome, MaterialIcons.
 * Not all icons available in NativeBase are supported, check [react-icons source](https://github.com/gorangajic/react-icons) to search for icon names.
-* New feature for NativeBase-web: `Icon.TabBarItem`.
+* New feature for native-base-web: `Icon.TabBarItem`.
 
 *Syntax*
 ```JavaScript
@@ -40,6 +40,7 @@ export default class IconExample extends Component {
 
 ## Icon.TabBarItem
 Use with `TabBarIOS`. This feature is migrated from [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons).
+Only available when using [react-native-web-extended](https://github.com/Chion82/react-native-web-extended).
 
 *Syntax*
 ```JavaScript
